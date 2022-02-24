@@ -1,17 +1,45 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM  from 'react-dom'; 
+import './style.css';
+import Books from './books/books.jsx'
 
+
+
+function Greetings() {
+  return (
+<article>
+<h1 className={'headline'}>Hello Everyone</h1>
+<Books img='https://images-eu.ssl-images-amazon.com/images/I/51T8OXMiB5L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg' 
+Title='Ikigai: The Japanese secret to a long and happy life'
+Author='Héctor García'
+Price='410'>
+
+</Books>
+<Books img='https://images-eu.ssl-images-amazon.com/images/I/51T8OXMiB5L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg' 
+Title='Ikigai: The Japanese secret to a long and happy life'
+Author='Héctor García'
+Price='410'>
+
+</Books>
+<Books img='https://images-eu.ssl-images-amazon.com/images/I/51T8OXMiB5L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg' 
+Title='Ikigai: The Japanese secret to a long and happy life'
+Author='Héctor García'
+Price='410'>
+
+</Books>
+<Books img='https://images-eu.ssl-images-amazon.com/images/I/51T8OXMiB5L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg' 
+Title='Ikigai: The Japanese secret to a long and happy life'
+Author='Héctor García'
+Price='410'>
+
+</Books>
+
+</article>
+)
+}
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Greetings/>
   </React.StrictMode>,
   document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+)
