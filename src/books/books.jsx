@@ -1,44 +1,22 @@
 import React from 'react';
-function Images(props){
-    return(
-        <img src={props.img} alt=''></img>
-        
-    )
-}
-function Title(props){
-    return(
-        <h4>
-            {props.Title}
-        </h4>
-    )
-}
-function Author (props){
-    return(
-        <h5>
-            {props.Author}
-        </h5>
-    )
-}
-function Price (props){
-    return(
-        <h4>
-            {props.Price}
-        </h4>
-    )
-}
+import Images from './image.jsx';
+import Author from './author.jsx';
+import Price from './price.jsx';
+import Title from './title.jsx';
+import './books.css';
+
 function Books(props){
+    function onclick(){
+        console.log(props.Title)
+        console.log(props.Author)
+    }
     return(
-        <section>
+        <section className='book' onClick={onclick} >
             <Images img={props.img} ></Images>
             <Title Title={props.Title}></Title>
             <Author Author={props.Author}></Author>
             <Price Price={props.Price}></Price>
         </section>
-       
-    
-    
-    
-    
     )
 }
 export default Books;

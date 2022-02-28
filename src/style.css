@@ -1,3 +1,12 @@
-.headline {
-    color: black
+*{
+    margin:0.0;
+    padding:0;
+    
+
+
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background:#f1f5f8 ;
+    background-image: url('https://cdn.lifestyleasia.com/wp-content/uploads/sites/2/2020/02/25145253/Photo-by-Alfons-Morales-on-Unsplash-scaled-1535x900.jpg');
 }
