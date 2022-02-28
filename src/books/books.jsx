@@ -1,9 +1,9 @@
 import React from 'react';
-import Images from './image.jsx';
-import Author from './author.jsx';
-import Price from './price.jsx';
-import Title from './title.jsx';
-import './books.css';
+import Images from './components/image.jsx';
+import Author from './components/author.jsx';
+import Price from './components/price.jsx';
+import Title from './components/title.jsx';
+import './styles/books.css';
 
 function Books(props){
     function onclick(){
