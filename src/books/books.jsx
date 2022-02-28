@@ -7,8 +7,8 @@ import './books.css';
 
 function Books(props){
     function onclick(){
-        console.log(props.Title)
-        console.log(props.Author)
+    
+        alert(props.Title)
     }
     return(
         <section className='book' onClick={onclick} >
